@@ -1,3 +1,23 @@
+/* =============================== START MY FONTS =============================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;0,900;1,200&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/* =============================== END MY FONTS =============================== */
+
+/* =============================== START MAIN STYLE =============================== */
+*,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins', sans-serif;
+}
+
+:root{
+    --head-color: #505050;
+}
+/* =============================== START MAIN STYLE =============================== */
+
 /* =============================== START NAVBAR STYLE =============================== */
 
 /* =============================== END NAVBAR STYLE =============================== */
