@@ -1,7 +1,5 @@
 /* =============================== START MY FONTS =============================== */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;0,900;1,200&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 /* =============================== END MY FONTS =============================== */
 
 /* =============================== START MAIN STYLE =============================== */
@@ -17,8 +15,194 @@ body {
   --head-color: #505050;
   --nav-color: #a3a3a3;
 }
+
+.container {
+  width: 100%;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+}
 /* =============================== START MAIN STYLE =============================== */
 
 /* =============================== START NAVBAR STYLE =============================== */
+.navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #a3a3a3cc;
+  backdrop-filter: blur(5px);
+  background-clip: border-box;
+  padding: 5px 20px;
+  height: 60px;
+}
 
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.navbar .nav-list {
+  padding: 0;
+  list-style: none;
+}
+
+.navbar .nav-list .nav-item {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.navbar .nav-list .nav-item:last-child {
+  margin: 0;
+}
+
+.nav-item .nav-link {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+  position: relative;
+}
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+  color: var(--head-color);
+}
+.nav-item .nav-link::after {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  content: "";
+  background-color: var(--head-color);
+  display: block;
+  transform: translateY(15px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.nav-item .nav-link.active::after,
+.nav-item .nav-link:hover::after {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.navbar .menu-button {
+  display: none;
+  border: none;
+  background: none;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar .menu-button span {
+  height: 5px;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.navbar .menu-button span:nth-child(1) {
+  width: 70%;
+  transform: translateY(-15px);
+}
+.navbar .menu-button span:nth-child(2) {
+  width: 85%;
+  transform: translateY(0);
+}
+.navbar .menu-button span:nth-child(3) {
+  width: 40%;
+  transform: translateY(15px);
+}
+
+.navbar .menu-button.active span:nth-child(1) {
+  width: 100%;
+  transform: translateY(0);
+  transform: rotate(45deg);
+}
+.navbar .menu-button.active span:nth-child(2) {
+  transform: translateX(200px);
+}
+.navbar .menu-button.active span:nth-child(3) {
+  width: 100%;
+  transform: translateY(0);
+  transform: rotate(315deg);
+}
+
+.navbar .logo-box .logo {
+  color: aqua;
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.navbar .logo-box > .logo:hover {
+  transform: scale3d(1.5, 1.5, 1.5);
+}
+.navbar .logo-box .code {
+  color: var(--head-color);
+  transition: 0.5s;
+  display: inline-block;
+  font-size: 25px;
+}
+.navbar .logo-box .code:first-child {
+  transform: translateX(-15px);
+}
+.navbar .logo-box .code:last-child {
+  transform: translateX(15px);
+}
+.navbar .logo-box .logo:hover .code {
+  transform: translateX(0);
+  font-size: 18px;
+}
 /* =============================== END NAVBAR STYLE =============================== */
+
+/* =============================== START MEDIA QUERIES =============================== */
+
+/* applies XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
+
+/* applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .container {
+    max-width: 540px;
+  }
+}
+/* =============================== END MEDIA QUERIES =============================== */
