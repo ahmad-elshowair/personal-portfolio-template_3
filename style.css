@@ -36,6 +36,7 @@ body {
   background-clip: border-box;
   padding: 5px 20px;
   height: 60px;
+  z-index: 10;
 }
 
 .navbar .container {
