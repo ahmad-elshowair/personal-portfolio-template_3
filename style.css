@@ -1,7 +1,5 @@
 /* =============================== START MY FONTS =============================== */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;0,900;1,200&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 /* =============================== END MY FONTS =============================== */
 
 /* =============================== START MAIN STYLE =============================== */
@@ -135,6 +133,35 @@ body {
   width: 100%;
   transform: translateY(0);
   transform: rotate(315deg);
+}
+
+.navbar .logo-box .logo {
+  color: aqua;
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.navbar .logo-box > .logo:hover {
+  transform: scale3d(1.5, 1.5, 1.5);
+}
+.navbar .logo-box .code {
+  color: var(--head-color);
+  transition: 0.5s;
+  display: inline-block;
+  font-size: 25px;
+}
+.navbar .logo-box .code:first-child {
+  transform: translateX(-15px);
+}
+.navbar .logo-box .code:last-child {
+  transform: translateX(15px);
+}
+.navbar .logo-box .logo:hover .code {
+  transform: translateX(0);
+  font-size: 18px;
 }
 /* =============================== END NAVBAR STYLE =============================== */
 
