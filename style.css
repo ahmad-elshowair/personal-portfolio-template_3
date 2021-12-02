@@ -165,6 +165,10 @@ body {
 }
 /* =============================== END NAVBAR STYLE =============================== */
 
+/* +++++++++++++++++++++++++++++++ START WELCOME SECTION STYLE +++++++++++++++++++++++++++++++ */
+.welcome-section
+/* +++++++++++++++++++++++++++++++ END WELCOME SECTION STYLE +++++++++++++++++++++++++++++++ */
+
 /* =============================== START MEDIA QUERIES =============================== */
 
 /* applies XX-Large devices (larger desktops, 1400px and up) */
