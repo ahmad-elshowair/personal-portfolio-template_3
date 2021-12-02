@@ -46,21 +46,36 @@ body {
 
 /* applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
+  .container {
+    max-width: 1320px;
+  }
 }
 
 /* applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+  .container {
+    max-width: 1140px;
+  }
 }
 
 /* applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  .container {
+    max-width: 960px;
+  }
 }
 
 /* applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+  .container {
+    max-width: 720px;
+  }
 }
 
 /* applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .container {
+    max-width: 540px;
+  }
 }
 /* =============================== END MEDIA QUERIES =============================== */
