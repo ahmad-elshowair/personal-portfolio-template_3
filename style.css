@@ -17,6 +17,14 @@ body {
   --head-color: #505050;
   --nav-color: #a3a3a3;
 }
+
+.container {
+  width: 100%;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+}
 /* =============================== START MAIN STYLE =============================== */
 
 /* =============================== START NAVBAR STYLE =============================== */
