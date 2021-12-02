@@ -167,7 +167,48 @@ body {
 /* =============================== END NAVBAR STYLE =============================== */
 
 /* +++++++++++++++++++++++++++++++ START WELCOME SECTION STYLE +++++++++++++++++++++++++++++++ */
-.welcome-section
+.welcome-section {
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+.welcome-section .overlay {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #545168;
+  mix-blend-mode: overlay;
+}
+
+.welcome-section .info .welcome-message {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.welcome-section .info h1 {
+  font-size: 5rem;
+  color: var(--head-color);
+}
+
+.info .job-title {
+  text-align: right;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.info .job-title .code {
+  color: #509526;
+  font-size: 20px;
+}
 /* +++++++++++++++++++++++++++++++ END WELCOME SECTION STYLE +++++++++++++++++++++++++++++++ */
 
 /* =============================== START MEDIA QUERIES =============================== */
