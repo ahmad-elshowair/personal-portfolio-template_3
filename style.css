@@ -28,5 +28,12 @@ body {
 /* =============================== START MAIN STYLE =============================== */
 
 /* =============================== START NAVBAR STYLE =============================== */
-
+.navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: var(--nav-color);
+  padding: 5px 20x;
+}
 /* =============================== END NAVBAR STYLE =============================== */
