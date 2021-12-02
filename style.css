@@ -37,15 +37,56 @@ body {
   backdrop-filter: blur(5px);
   background-clip: border-box;
   padding: 5px 20px;
-  max-height: 60px;
+  height: 60px;
 }
 
 .navbar .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 100%;
 }
 
+.navbar .nav-list {
+  padding: 0;
+  list-style: none;
+}
+
+.navbar .nav-list .nav-item {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.navbar .nav-list .nav-item:last-child {
+  margin: 0;
+}
+
+.nav-item .nav-link {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+  position: relative;
+}
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+  color: var(--head-color);
+}
+.nav-item .nav-link::after {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  content: "";
+  background-color: var(--head-color);
+  display: block;
+  transform: translateY(15px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.nav-item .nav-link.active::after,
+.nav-item .nav-link:hover::after {
+  transform: translateY(0);
+  opacity: 1;
+}
 /* =============================== END NAVBAR STYLE =============================== */
 
 /* =============================== START MEDIA QUERIES =============================== */
