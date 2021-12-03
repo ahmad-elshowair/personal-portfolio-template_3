@@ -176,6 +176,7 @@ body {
   position: relative;
   background-attachment: fixed;
 }
+
 .welcome-section .overlay {
   height: 100%;
   position: absolute;
@@ -184,8 +185,13 @@ body {
   left: 0;
   background-color: #545168;
   mix-blend-mode: overlay;
+  z-index: 0;
 }
 
+.welcome-section .info {
+  z-index: 1;
+}
+.info .job-title,
 .welcome-section .info .welcome-message {
   font-size: 20px;
   font-weight: 400;
@@ -199,10 +205,7 @@ body {
 
 .info .job-title {
   text-align: right;
-  font-size: 20px;
-  letter-spacing: 2px;
 }
-
 .info .job-title .code {
   color: #509526;
   font-size: 20px;
