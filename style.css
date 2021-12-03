@@ -34,7 +34,7 @@ body {
   background-color: #a3a3a3fc;
   padding: 5px 20px;
   height: 60px;
-  z-index: 10;
+  z-index: 3;
 }
 
 .navbar .container {
