@@ -220,6 +220,25 @@ body {
   background: linear-gradient(to bottom, #33ccff 0%, #ccccff 50%, #ff99cc 100%);
 }
 
+.projects-section header {
+  margin-left: 20px;
+}
+.projects-section header h2 {
+  font-size: 2.5rem;
+  color: var(--head-color);
+  text-transform: capitalize;
+  position: relative;
+}
+
+.projects-section header h2::after {
+  position: absolute;
+  content: "";
+  width: 8%;
+  height: 4px;
+  background-color: #eee;
+  top: 30px;
+  border-radius: 15px;
+}
 /* =============================== END PROJECTS SECTION STYLE =============================== */
 
 /* =============================== START MEDIA QUERIES =============================== */
