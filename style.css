@@ -215,7 +215,110 @@ body {
 /* +++++++++++++++++++++++++++++++ END WELCOME SECTION STYLE +++++++++++++++++++++++++++++++ */
 
 /* =============================== START PROJECTS SECTION STYLE  =============================== */
+.projects-section {
+  padding: 80px 0;
+  background: linear-gradient(to bottom, #33ccff 0%, #ccccff 50%, #ff99cc 100%);
+  text-align: center;
+}
 
+.projects-section header {
+  margin-left: 20px;
+  margin-bottom: 5rem;
+}
+.projects-section header h2 {
+  font-size: 2.5rem;
+  color: var(--head-color);
+  text-transform: capitalize;
+  position: relative;
+  display: inline-block;
+}
+.projects-section header h2::before,
+.projects-section header h2::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 4px;
+  background-color: #eee;
+  top: 30px;
+  border-radius: 15px;
+}
+.projects-section header h2::before {
+  left: -55px;
+}
+
+.projects-section .project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+.project-grid .project-tile {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 20%);
+  text-decoration: none;
+}
+
+.project-grid .project-tile .project-image {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.project-grid .project-tile:hover .project-image {
+  transform: scale3d(1.05, 1.05, 1.05);
+}
+.project-grid .project-title {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: var(--nav-color);
+  transition: 0.5s;
+}
+
+.project-grid .project-title .code {
+  display: inline-block;
+  color: #a36820;
+  transition: 0.5s;
+}
+
+.project-grid .project-title .code:first-child {
+  transform: translateX(-10px);
+}
+.project-grid .project-title .code:last-child {
+  transform: translateX(10px);
+}
+
+.project-grid .project-title:hover {
+  color: #000;
+}
+
+.project-grid .project-title:hover .code {
+  transform: translateX(0);
+}
+
+.projects-section .button-other-work {
+  text-decoration: none;
+  padding: 15px 20px;
+  box-shadow: 0 10px 20px #a3a3a3;
+  border-radius: 10px;
+  text-transform: capitalize;
+  color: #000;
+  transition: 0.5s;
+}
+
+.projects-section .button-other-work i {
+  transition: 0.5s;
+}
+.projects-section .button-other-work:hover {
+  box-shadow: 0 0px 20px 14px #fffffffa;
+  color: var(--nav-color);
+}
+.projects-section .button-other-work:hover i {
+  transform: translateX(10px);
+}
 /* =============================== END PROJECTS SECTION STYLE =============================== */
 
 /* =============================== START MEDIA QUERIES =============================== */
