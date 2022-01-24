@@ -349,6 +349,142 @@ body {
 
 /* =============================== END PROJECTS SECTION STYLE =============================== */
 
+/* =============================== START CONTACT SECTION STYLE =============================== */
+.contact-section {
+  padding: 60px 0;
+}
+
+.contact-section header {
+  margin-left: 20px;
+  margin-bottom: 5rem;
+  text-align: center;
+
+}
+
+.contact-section header h2 {
+  font-size: 2.5rem;
+  color: var(--head-color);
+  text-transform: capitalize;
+  position: relative;
+  display: inline-block;
+}
+
+.contact-section header h2::before,
+.contact-section header h2::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 4px;
+  background-color: #eee;
+  top: 30px;
+  border-radius: 15px;
+}
+
+.contact-section header h2::before {
+  left: -55px;
+}
+
+.contact-section header h2::after {
+  right: -55px;
+}
+
+.contact-section header p {
+  font-size: 15px;
+  font-style: italic;
+}
+
+.contact-section ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-section ul li {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  transition: all ease-in-out .8s;
+  cursor: pointer;
+}
+
+.contact-section ul li:hover {
+  transform: translateY(-10px);
+}
+
+.contact-section ul li a {
+  font-size: 40px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.contact-section ul li.github:hover {
+  background-color: #333;
+}
+
+.contact-section ul li.github:hover a {
+  color: #fafafa
+}
+
+.contact-section ul li.github a {
+  color: #333;
+}
+
+.contact-section ul li.linkedin:hover {
+  background-color: #0077b5;
+}
+
+.contact-section ul li.linkedin:hover a {
+  color: #caccce
+}
+
+.contact-section ul li.linkedin a {
+  color: #0077b5;
+}
+
+
+.contact-section ul li.twitter:hover {
+  background-color: #1da1f2;
+}
+
+.contact-section ul li.twitter:hover a {
+  color: #f5f8fa
+}
+
+.contact-section ul li.twitter a {
+  color: #1da1f2;
+}
+
+
+.contact-section ul li.facebook:hover {
+  background-color: #1877f2;
+}
+
+.contact-section ul li.facebook:hover a {
+  color: #fff
+}
+
+.contact-section ul li.facebook a {
+  color: #1877f2;
+}
+
+.contact-section ul li.at:hover {
+  background-color: #373737;
+}
+
+.contact-section ul li.at:hover a {
+  color: #fff
+}
+
+.contact-section ul li.at a {
+  color: #373737;
+}
+
+/* =============================== END CONTACT SECTION STYLE =============================== */
+
 /* =============================== START MEDIA QUERIES =============================== */
 
 /* applies XX-Large devices (larger desktops, 1400px and up) */
