@@ -567,7 +567,20 @@ footer ul li a:hover::after {
 /* applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   .container {
-    max-width: 720px;
+    max-width: 720px
+  }
+
+  .info .job-title,
+  .welcome-section .info .welcome-message {
+    font-size: 16px;
+  }
+
+  .welcome-section .info h1 {
+    font-size: 3.5rem;
+  }
+
+  .projects-section .project-grid {
+    grid-template-columns: repeat(1, minmax(320px, 1fr));
   }
 }
 
@@ -576,6 +589,57 @@ footer ul li a:hover::after {
   .container {
     max-width: 540px;
   }
-}
 
-/* =============================== END MEDIA QUERIES =============================== */
+  .info .job-title,
+  .welcome-section .info .welcome-message {
+    font-size: 12px;
+    font-weight: 900;
+  }
+
+  .welcome-section .info h1 {
+    font-size: 3rem;
+  }
+
+  .projects-section header h2 {
+    font-size: 1.5rem;
+  }
+
+  .projects-section header h2::before,
+  .projects-section header h2::after {
+    top: 18px;
+  }
+
+  .projects-section header h2::before {
+    left: -33px;
+  }
+
+  .projects-section .project-grid {
+    grid-template-columns: repeat(1, minmax(320px, 1fr));
+  }
+
+  .contact-section header h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-section header h2::before,
+  .contact-section header h2::after {
+    top: 18px;
+  }
+
+  .contact-section header h2::after {
+    right: -33px;
+  }
+
+  .contact-section header h2::before {
+    left: -33px;
+  }
+
+  .contact-section ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    gap: 30px;
+
+  }
+
+  /* =============================== END MEDIA QUERIES =============================== */
